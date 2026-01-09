@@ -1,0 +1,38 @@
+MLD_DAYPILOT_V1
+
+UTILISATEUR (
+  id_utilisateur PK, nom, email, mot_de_passe, theme_prefere
+)
+JOURNEE (
+  id_journee PK,date_journee,id_utilisateur FK → UTILISATEUR(id_utilisateur)
+)
+PRIORITE (
+  id_priorite PK, libelle
+)
+CATEGORIE (
+  id_categorie PK, nom, couleur
+)
+TACHE (
+  id_tache PK,
+  titre,
+  description,
+  heure_debut,
+  heure_fin,
+  statut,
+  id_journee   FK → JOURNEE(id_journee),
+  id_priorite  FK → PRIORITE(id_priorite),
+  id_categorie FK → CATEGORIE(id_categorie)
+)
+RAPPEL (
+  id_rappel PK,
+  date_rappel,
+  heure_rappel,
+  type_rappel,
+  actif,
+  id_tache FK → TACHE(id_tache)
+)
+
+
+
+
+
