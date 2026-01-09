@@ -1,4 +1,4 @@
-# n coureDayPilot
+# DayPilot
 
 **Application Mobile de Gestion de Tâches et Rappels Horaires**
 **Auteur : Josh BEDEL**
@@ -121,3 +121,4 @@ DayPilot/
 # Licence
 
 Projet privé — Tous droits réservés.
+
