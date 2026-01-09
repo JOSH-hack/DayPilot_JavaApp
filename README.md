@@ -1,4 +1,4 @@
-# DayPilot
+# n coureDayPilot
 
 **Application Mobile de Gestion de Tâches et Rappels Horaires**
 **Auteur : Josh BEDEL**
@@ -103,16 +103,16 @@ DayPilot/
 
 **Phase : Analyse & Modélisation MERISE**
 
-- Cahier des charges → en cours
-- MCD → en cours
-- MLD/MPD → en cours
-- Architecture → à définir
+- Cahier des charges → Terminé
+- MCD → Terminé
+- MLD/MPD → Terminé
+- Architecture → à définir ( En cours )
 - Développement → pas encore commencé
 
 # Prochaines étapes
 
-1. Finalisation MERISE (MCD → MLD → MPD)
-2. Définition complète de l’architecture MVVM
+1. Finalisation MERISE (MCD → MLD → MPD) - Etape terminée
+2. Définition complète de l’architecture MVVM ( En cours )
 3. Création du squelette Android
 4. Mise en place de la base de données
 5. Implémentation des alarmes et notifications
