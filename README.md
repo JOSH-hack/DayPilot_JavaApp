@@ -154,7 +154,7 @@ DayPilot/
 
 # État actuel du projet
 
-**Phase : Architecture MVVM & Préparation du Développement**  
+**Phase : Architecture MVVM & Préparation du Développement**
 **Date de mise à jour : 17 janvier 2026**
 
 ## Avancement global : 35% ✓
@@ -192,6 +192,7 @@ DayPilot/
 La documentation complète de l'architecture MVVM est disponible dans le dossier : **[`docs/MVVM/`](docs/MVVM/)**
 
 Vous y trouverez :
+
 - 8 livrables détaillant chaque aspect de l'architecture
 - Spécifications techniques des composants, services et ViewModels
 - Diagrammes et tableaux de responsabilités
@@ -333,6 +334,282 @@ L’adoption de l’architecture MVVM permet :
 La définition de l’architecture MVVM constitue une étape clé du projet DayPilot.
 
 Elle pose les bases d’un développement structuré, cohérent et maintenable, et prépare efficacement les phases suivantes de conception détaillée et d’implémentation.
+
+
+# **Planning de développement — Projet DayPilot**
+
+## **Phase 1 — Initialisation & Environnement (1 jour)**
+
+### 1.1 Création du dépôt et organisation du projet [ @ Terminé]
+
+**Objectif :** Poser les bases du projet
+
+**Compétences / Technologies :**
+
+* Git / GitHub
+* Organisation de projet
+* Convention de nommage
+* VS Code
+
+---
+
+### 1.2 Initialisation du backend
+
+**Objectif :** Créer le socle serveur
+
+**Compétences / Technologies :**
+
+* Node.js
+* Express.js
+* npm
+* JavaScript (ES6+)
+
+---
+
+### 1.3 Initialisation du frontend
+
+**Objectif :** Créer l’application Vue
+
+**Compétences / Technologies :**
+
+* Vue.js 3
+* Vite
+* JavaScript moderne
+* Architecture MVVM
+
+---
+
+### 1.4 Mise en place de la base de données
+
+**Objectif :** Créer la base PostgreSQL à partir du MPD
+
+**Compétences / Technologies :**
+
+* PostgreSQL
+* SQL
+* Modélisation MERISE
+* Contraintes et clés étrangères
+
+---
+
+## **Phase 2 — Développement Backend (4 jours)**
+
+### 2.1 Configuration de la connexion à la base de données
+
+**Compétences / Technologies :**
+
+* PostgreSQL
+* Node.js
+* Driver PostgreSQL (pg)
+* Variables d’environnement
+
+---
+
+### 2.2 Implémentation des modèles
+
+**Objectif :** Représenter les entités métier
+
+**Compétences / Technologies :**
+
+* JavaScript
+* Architecture MVC côté backend
+* Mapping SQL ↔ objets
+
+---
+
+### 2.3 Implémentation des repositories
+
+**Objectif :** Centraliser l’accès aux données
+
+**Compétences / Technologies :**
+
+* SQL avancé
+* Repository Pattern
+* Requêtes paramétrées
+
+---
+
+### 2.4 Implémentation des contrôleurs
+
+**Objectif :** Appliquer les règles métier
+
+**Compétences / Technologies :**
+
+* Express.js
+* Validation métier
+* Gestion des erreurs
+* HTTP Status Codes
+
+---
+
+### 2.5 Création des routes API REST
+
+**Objectif :** Exposer les fonctionnalités
+
+**Compétences / Technologies :**
+
+* REST
+* Express Router
+* JSON
+
+---
+
+### 2.6 Tests des endpoints
+
+**Objectif :** Valider le backend
+
+**Compétences / Technologies :**
+
+* Postman / Insomnia
+* Tests fonctionnels
+* Debugging API
+
+---
+
+## **Phase 3 — Développement Frontend (Logique MVVM) (3 jours)**
+
+### 3.1 Mise en place des services API
+
+**Objectif :** Communication frontend ↔ backend
+
+**Compétences / Technologies :**
+
+* Axios / Fetch API
+* REST
+* Gestion des erreurs réseau
+
+---
+
+### 3.2 Implémentation des ViewModels
+
+**Objectif :** Centraliser la logique applicative
+
+**Compétences / Technologies :**
+
+* MVVM
+* Vue.js Composition API
+* Gestion d’état réactif
+
+---
+
+### 3.3 Pré-validation des règles métier côté frontend
+
+**Objectif :** Améliorer l’expérience utilisateur
+
+**Compétences / Technologies :**
+
+* JavaScript
+* Validation de formulaires
+* UX logique
+
+---
+
+## **Phase 4 — Développement Interface Utilisateur (4 jours)**
+
+### 4.1 Création des composants UI
+
+**Objectif :** Affichage des tâches et rappels
+
+**Compétences / Technologies :**
+
+* Vue.js
+* HTML5 / CSS3
+* Composants réutilisables
+
+---
+
+### 4.2 Création des formulaires
+
+**Objectif :** Création / modification des tâches et rappels
+
+**Compétences / Technologies :**
+
+* Vue.js
+* Validation formulaire
+* UX/UI
+
+---
+
+### 4.3 Gestion du routing
+
+**Objectif :** Navigation dans l’application
+
+**Compétences / Technologies :**
+
+* Vue Router
+* SPA
+
+---
+
+### 4.4 Gestion des thèmes et styles
+
+**Objectif :** Interface moderne et cohérente
+
+**Compétences / Technologies :**
+
+* CSS
+* Material Design / Tailwind
+* Responsive Design
+
+---
+
+## **Phase 5 — Intégration & Tests (2 jours)**
+
+### 5.1 Intégration frontend / backend
+
+**Objectif :** Vérifier la cohérence globale
+
+**Compétences / Technologies :**
+
+* API REST
+* Debugging full-stack
+* Analyse réseau
+
+---
+
+### 5.2 Tests fonctionnels complets
+
+**Objectif :** Valider les scénarios utilisateurs
+
+**Compétences / Technologies :**
+
+* Tests manuels
+* Cas d’utilisation
+* Validation métier
+
+---
+
+### 5.3 Correction des anomalies
+
+**Objectif :** Stabiliser l’application
+
+**Compétences / Technologies :**
+
+* Debugging
+* Refactoring
+* Analyse d’erreurs
+
+---
+
+## **Phase 6 — Finalisation & Livraison (1 jour)**
+
+### 6.1 Documentation technique
+
+**Compétences / Technologies :**
+
+* Markdown
+* Rédaction technique
+* Architecture logicielle
+
+---
+
+### 6.2 Préparation de la version finale
+
+**Compétences / Technologies :**
+
+* Git
+* Versioning
+* Build frontend
 
 # Licence
 
