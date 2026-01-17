@@ -154,25 +154,60 @@ DayPilot/
 
 # État actuel du projet
 
-**Phase : MVVM & Architecture Full-Stack**
+**Phase : Architecture MVVM & Préparation du Développement**  
+**Date de mise à jour : 17 janvier 2026**
 
-- Cahier des charges → Terminé
-- MCD → Terminé
-- MLD/MPD → Terminé
-- Architecture MVVM → Définie pour frontend et backend
-- Gestion des tâches et rappels → Prise en compte dans le design
-- Développement → Préparation du squelette backend/frontend
+## Avancement global : 35% ✓
+
+### Documentation & Analyse
+
+- ✅ Cahier des charges — **Complété**
+- ✅ MCD (Modèle Conceptuel de Données) — **Complété**
+- ✅ MLD (Modèle Logique de Données) — **Complété**
+- ✅ MPD (Modèle Physique de Données) — **Complété** (MPD_DAYPILOT_V1.sql)
+- ✅ Architecture MVVM — **Définie et Documentée** (voir section Documentation ci-dessous)
+
+### Livrables MVVM (8 documents de spécification)
+
+- ✅ **Livrable 1** : Définition de l'architecture MVVM
+- ✅ **Livrable 2** : Spécification des composants Vue
+- ✅ **Livrable 3** : Spécification des services API
+- ✅ **Livrable 4** : Spécification du backend
+- ✅ **Livrable 5** : Spécification des ViewModels
+- ✅ **Livrable 6** : Gestion des états et data-binding
+- ✅ **Livrable 7** : Intégration API-Service-ViewModel
+- ✅ **Livrable 8** : Plan de déploiement et testing
+
+### État du Code
+
+- 🔄 **Backend** : Structure créée (models, controllers, repositories, routes, middleware)
+- 🔄 **Frontend** : Structure créée (components, services, viewmodels)
+- ⏳ **Base de données** : MPD prête, initialisation des données (data_init.sql) disponible
+- ⏳ **Intégration** : À commencer
+
+---
+
+## Documentation MVVM
+
+La documentation complète de l'architecture MVVM est disponible dans le dossier : **[`docs/MVVM/`](docs/MVVM/)**
+
+Vous y trouverez :
+- 8 livrables détaillant chaque aspect de l'architecture
+- Spécifications techniques des composants, services et ViewModels
+- Diagrammes et tableaux de responsabilités
+- Guide d'intégration entre frontend et backend
 
 ---
 
 # Prochaines étapes
 
-1. Développement du backend Node.js/Express avec API REST complète
-2. Mise en place de PostgreSQL avec toutes les contraintes MPD
-3. Développement du frontend Vue.js 3 avec MVVM et composants réactifs
-4. Intégration des rappels et notifications côté frontend
-5. Tests unitaires et intégration
-6. Packaging et déploiement multiplateforme
+1. ⏳ Développement du backend Node.js/Express avec API REST complète
+2. ⏳ Mise en place de PostgreSQL avec migration des données d'initialisation
+3. ⏳ Développement du frontend Vue.js 3 avec MVVM et composants réactifs
+4. ⏳ Intégration des rappels et notifications côté frontend
+5. ⏳ Implémentation de la validation métier et gestion des conflits horaires
+6. ⏳ Tests unitaires et intégration
+7. ⏳ Packaging et déploiement multiplateforme (Web + Android)
 
 ---
 
