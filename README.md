@@ -176,9 +176,7 @@ DayPilot/
 
 ---
 
-------- Details portant sur le Définition de l'architecture MVVM 
-
-
+------- Details portant sur le Définition de l'architecture MVVM
 
 # **Livrable 1 — Définition de l’architecture MVVM**
 
@@ -277,6 +275,10 @@ Le fonctionnement général de l’architecture MVVM dans le projet DayPilot est
 
 Ce flux garantit un contrôle total des échanges et une meilleure gestion de l’état de l’application.
 
+[Tableau De Responabilités](MVVM/TableauDeResponsabilités.png)
+
+[Structure Globales des fichiers](MVVM/StructureGlobaleduSujet.png)
+
 ---
 
 ## **6. Bénéfices attendus pour le projet DayPilot**
@@ -300,4 +302,3 @@ Elle pose les bases d’un développement structuré, cohérent et maintenable, 
 # Licence
 
 Projet privé — Tous droits réservés.
-
