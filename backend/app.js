@@ -1,8 +1,9 @@
 // app.js — Point d'entrée du serveur DayPilot
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const errorHandler = require('./middleware/errorHandler');
+const errorHandler = require('./middlewares/errorHandler');
 
 // Routes
 const utilisateurRoutes = require('./routes/utilisateurRoutes');
