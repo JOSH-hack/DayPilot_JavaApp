@@ -1,5 +1,5 @@
+-- Active: 1778641055610@@localhost@5432@daypilot
 node_modules
-# Keep environment variables out of version control
 .env
-
-/generated/prisma
+node_modules/
+pnpm-lock.yaml

@@ -25,12 +25,20 @@ const findByEmail = async (email) => {
     return result.rows[0] || null;
 };
 
-const create = async ({ nom, email, mot_de_passe, theme_prefere }) => {
+const findByGoogleId = async (google_id) => {
     const result = await pool.query(
-        `INSERT INTO UTILISATEUR (nom, email, mot_de_passe, theme_prefere)
-     VALUES ($1, $2, $3, $4)
-     RETURNING id_utilisateur, nom, email, theme_prefere`,
-        [nom, email, mot_de_passe, theme_prefere || null]
+        'SELECT * FROM UTILISATEUR WHERE google_id = $1',
+        [google_id]
+    );
+    return result.rows[0] || null;
+};
+
+const create = async ({ nom, email, mot_de_passe, theme_prefere, google_id }) => {
+    const result = await pool.query(
+        `INSERT INTO UTILISATEUR (nom, email, mot_de_passe, theme_prefere, google_id)
+     VALUES ($1, $2, $3, $4, $5)
+     RETURNING id_utilisateur, nom, email, theme_prefere, google_id`,
+        [nom, email, mot_de_passe, theme_prefere || null, google_id || null]
     );
     return result.rows[0];
 };
@@ -48,6 +56,28 @@ const update = async (id, { nom, email, theme_prefere }) => {
     return result.rows[0] || null;
 };
 
+const updateGoogleId = async (id, google_id) => {
+    const result = await pool.query(
+        `UPDATE UTILISATEUR
+     SET google_id = $1
+     WHERE id_utilisateur = $2
+     RETURNING id_utilisateur, nom, email, theme_prefere, google_id`,
+        [google_id, id]
+    );
+    return result.rows[0] || null;
+};
+
+const updateLastLogin = async (id) => {
+    const result = await pool.query(
+        `UPDATE UTILISATEUR
+     SET last_login = NOW()
+     WHERE id_utilisateur = $1
+     RETURNING id_utilisateur, nom, email, theme_prefere, google_id, last_login`,
+        [id]
+    );
+    return result.rows[0] || null;
+};
+
 const remove = async (id) => {
     const result = await pool.query(
         'DELETE FROM UTILISATEUR WHERE id_utilisateur = $1 RETURNING id_utilisateur',
@@ -56,4 +86,4 @@ const remove = async (id) => {
     return result.rows[0] || null;
 };
 
-module.exports = { findAll, findById, findByEmail, create, update, remove };
+module.exports = { findAll, findById, findByEmail, findByGoogleId, create, update, updateGoogleId, updateLastLogin, remove };
