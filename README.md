@@ -310,16 +310,16 @@ SESSION_SECRET=autre_chaine_secrete
 
 | Étape | Statut |
 |-------|--------|
-| Cahier des charges | ✅ Terminé |
-| MCD / MLD / MPD | ✅ Terminé |
-| Architecture MVVM | ✅ Définie |
-| Backend Node.js (squelette) | ✅ Terminé |
-| Base de données PostgreSQL | ✅ Prête |
-| Module 0 — Auth & Profil | 🔄 En cours |
-| Module 1 — Tâches & Calendrier | ⏳ À venir |
-| Module 2 — Rappels | ⏳ À venir |
-| Module 3 — Widget | ⏳ À venir |
-| Module 4 — Gamification | ⏳ À venir |
+| Cahier des charges | Terminé |
+| MCD / MLD / MPD |  Terminé |
+| Architecture MVVM |  Définie |
+| Backend Node.js (squelette) |  Terminé |
+| Base de données PostgreSQL |  Prête |
+| Module 0 — Auth & Profil |  En cours |
+| Module 1 — Tâches & Calendrier |  À venir |
+| Module 2 — Rappels |  À venir |
+| Module 3 — Widget |  À venir |
+| Module 4 — Gamification |  À venir |
 
 ---
 
